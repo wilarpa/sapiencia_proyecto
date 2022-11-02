@@ -4,9 +4,10 @@
     --titulos:'Lato', sans-serif;
     --parrafos:'Roboto', sans-serif;
     /*colores*/
-    --encabezado:rgb(255, 234, 5); 
+    --encabezado:rgba(255, 234, 5, 0.311); 
     --piepagina:#000;
     --enlace: rgb(0, 0, 0);
+    --enlace_encabezado: rgb(0, 0, 0);
     --enlaceSobre:rgb(255, 3, 24);
 
 }
@@ -23,33 +24,46 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* estilo para una clase en css es (.)*/
 .home-wrapper{
-    background-image: url('/images/background.jpg') ;
-    background-size: cover;
+    background-image:url(https://lh3.googleusercontent.com/JO0s3VoQzr061X_-BdB3sN0L2tu4vl9SOOTuVC95dsNiP3QDVEF4di7vX5FowUHYS3ipqfI9GTC5-99njNx4wTkjnCJdlZF07AAvmNCnqrkGGqdLHtX2ugaRgq-tg58tdZzVRtgRuA=w4000);
+    background-size: 155%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    
     
 }
+.containerhead{
+    height: 100px;
+
+}
+
 header{
     width: 100%;
     background-color: var(--encabezado);
-    position: fixed;
+
 /*elemento fijo*/
+    position: fixed;
     padding-top: 8px;
     padding-bottom: 8px;
 
 }
 header nav{
     float: right;
-    margin-left: 5px;
+    margin-left: 18px;
    
 }
 header img{
-    width:200px;
+    width:150px;
 }
 
 header nav a {
-    color: var(--enlace);
+    color: var(--enlace_encabezado);
     text-decoration: none;
-    margin-left:8px;
+    margin-left:18px;
     font-weight: bold;
+    font-size: 18px;
+    position: relative;top: 20px;
+    
 
 }
 
@@ -60,19 +74,25 @@ header nav a:hover {
 /* sección home *//*los identifiacdores (id) se representan con #, las clases con (.)*/
 #home{
     text-align: center;
-    padding: 250px 0 250px;
+    padding: 100px 0 50px;
+   
 }
 
 #home h1{
-    font-size: 3.0rem;
-    margin-bottom: 30px;
+    font-size: 8.0rem;
+    margin-bottom: 0px;
+    color: #fefefe00;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 5px rgba(255, 242, 1, 0.615) ;
 
 }
 
 #home p{
-    margin-top: 30px;
-    font-size: 1.5rem;
+    margin-top: 0px;
+    font-size: 2rem;
     font-weight: 700;
+    color: #fefefeab;
+   
 }
 
 section {
@@ -185,3 +205,5 @@ footer{
     color: #ffff;
     background-color: var(--encabezado);
 }
+
+/* para home */
